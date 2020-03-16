@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import csv
 
 MAIN_URL = 'https://www.bn.ru/kvartiry-vtorichka/?kkv=&pricePer=1&priceFrom=&priceTo=&squareFrom=&squareTo' \
            '=&squareLivingFrom=&squareLivingTo=&squareKitchenFrom=&squareKitchenTo=&distanceToMetro=0&typeHouseGroup' \
@@ -11,6 +12,7 @@ MAIN_URL = 'https://www.bn.ru/kvartiry-vtorichka/?kkv=&pricePer=1&priceFrom=&pri
 HEADERS = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
                          'Chrome/80.0.3987.122 Safari/537.36', 'accept': '*/*'}
 HOST = 'https://www.bn.ru/'
+FILE = 'links.csv'
 
 
 # 1
@@ -27,17 +29,31 @@ def links_to_apartments(html):
         home_links.append({
             'link': HOST + item.get('href')
         })
-        print()
-    print(home_links)
-    print(len(home_links))
+    return home_links
+
+
+def save_file(items, path):
+    with open(path, 'w', newline='') as file:
+        writer = csv.writer(file, delimiter=',')
+        writer.writerow(['Ссылка'])
+        for item in items:
+            writer.writerow([item['link']])
 
 
 # 2
 def parse():
     html = get_html(MAIN_URL)
+    pages_count = int(10)
     if html.status_code == 200:
-        links_to_apartments(html.text)
+        links = []
+        for page in range(1, pages_count + 1):
+            print(f'Парсинг страницы {page} из {pages_count}...')
+            html = get_html(MAIN_URL, params={'page': page})
+            links.extend(links_to_apartments(html.text))
+        save_file(links, FILE)
+        print(f'Получено {len(links)} ссылок')
+    else:
+        print('Error')
 
 
 parse()
-
