@@ -1,3 +1,4 @@
+
 import requests
 from bs4 import BeautifulSoup
 import csv
@@ -12,7 +13,7 @@ MAIN_URL = 'https://www.bn.ru/kvartiry-vtorichka/?kkv=&pricePer=1&priceFrom=&pri
 HEADERS = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
                          'Chrome/80.0.3987.122 Safari/537.36', 'accept': '*/*'}
 HOST = 'https://www.bn.ru/'
-FILE = 'links.csv'
+FILE = 'ListOfApartments.csv'
 
 
 # 1
@@ -35,7 +36,7 @@ def links_to_apartments(html):
 def save_file(items, path):
     with open(path, 'w', newline='') as file:
         writer = csv.writer(file, delimiter=',')
-        writer.writerow(['Ссылка'])
+        writer.writerow(['Link'])
         for item in items:
             writer.writerow([item['link']])
 
