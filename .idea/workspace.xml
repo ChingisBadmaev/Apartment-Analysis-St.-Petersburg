@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d776774-214c-4538-838f-949d4c6daf95" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Apartments-parser-main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apartments-parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apartments-parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apartments-parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ListOfApartments-parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ListOfApartments.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,10 +32,31 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../parser.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/URL_list.csv" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Python.Apartments-parser">
+  <component name="RunManager" selected="Python.Apartments-parser-main">
+    <configuration name="Apartments-parser-main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Apartment Analysis St. Petersburg" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Apartments-parser-main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Apartments-parser" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Apartment Analysis St. Petersburg" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,6 +141,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ParserHouse" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Apartment Analysis St. Petersburg" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ParserHouse" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ParserHouse/ParserHouse.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="parser" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Apartment Analysis St. Petersburg" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -141,12 +186,16 @@
     <list>
       <item itemvalue="Python.ListOfApartments-parser (1)" />
       <item itemvalue="Python.ListOfApartments-parser" />
+      <item itemvalue="Python.Apartments-parser-main" />
       <item itemvalue="Python.Apartments-parser" />
       <item itemvalue="Python.File1" />
+      <item itemvalue="Python.ParserHouse" />
       <item itemvalue="Python.parser" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Apartments-parser-main" />
+        <item itemvalue="Python.ParserHouse" />
         <item itemvalue="Python.Apartments-parser" />
         <item itemvalue="Python.File1" />
         <item itemvalue="Python.parser" />
@@ -171,37 +220,47 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1584384491353" />
-    <state x="739" y="294" key="FileChooserDialogImpl" timestamp="1583264901176">
+    <state x="739" y="294" key="FileChooserDialogImpl" timestamp="1587433197682">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="739" y="294" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1583264901176" />
-    <state width="1899" height="510" key="GridCell.Tab.0.bottom" timestamp="1586214815080">
+    <state x="739" y="294" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1587433197682" />
+    <state width="1899" height="224" key="GridCell.Tab.0.bottom" timestamp="1587443570674">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="510" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1586214815080" />
-    <state width="1899" height="510" key="GridCell.Tab.0.center" timestamp="1586214815080">
+    <state width="1899" height="224" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1587443570674" />
+    <state width="1899" height="224" key="GridCell.Tab.0.center" timestamp="1587443570674">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="510" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1586214815080" />
-    <state width="1899" height="510" key="GridCell.Tab.0.left" timestamp="1586214815080">
+    <state width="1899" height="224" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1587443570674" />
+    <state width="1899" height="224" key="GridCell.Tab.0.left" timestamp="1587443570674">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="510" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1586214815080" />
-    <state width="1899" height="510" key="GridCell.Tab.0.right" timestamp="1586214815080">
+    <state width="1899" height="224" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1587443570674" />
+    <state width="1899" height="224" key="GridCell.Tab.0.right" timestamp="1587443570674">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="510" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1586214815080" />
-    <state x="461" y="182" key="SettingsEditor" timestamp="1586004661901">
+    <state width="1899" height="224" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1587443570674" />
+    <state x="461" y="182" key="SettingsEditor" timestamp="1586826017044">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="461" y="182" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1586004661901" />
-    <state x="655" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1586002493600">
+    <state x="461" y="182" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1586826017044" />
+    <state x="655" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1587357263044">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="655" y="364" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1586002493600" />
+    <state x="655" y="364" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1587357263044" />
     <state x="769" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584386169942">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="769" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1584386169942" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Apartments-parser-main.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
